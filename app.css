@@ -4,7 +4,7 @@ img {
     filter: grayscale(50%);
     box-shadow: 0.5em 0.5em 0.5em -0.4em gray;
     transition: grayscale 0.1s, transform 0.9s, box-shadow 0.75s;
-    height: 30em;
+    height: 37em;
 }
 
 img:hover{
