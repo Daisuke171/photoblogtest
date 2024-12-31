@@ -13,6 +13,13 @@ img:hover{
     box-shadow: 0.5em 0.5em 0.5em -0.4em black;
 }
 
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 body {
     background-color: #f0f8ff;
 }
@@ -27,4 +34,32 @@ nav {
     font-family: Raleway, sans-serif;
     font-size: 1.5em;
     font-weight: 800;
+}
+
+@media (max-width: 900px) {
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    img{
+        flex: 1 1 calc(40% - 1em);
+        margin: 0.01em;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    img{
+        flex: 1 1 calc(80% - 1.6em);
+        margin: 1em;
+        height: auto;
+    }
 }
